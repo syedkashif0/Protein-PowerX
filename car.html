@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Section Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .contact-container, .buy-container, .about-container {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+
+    button, .buy-button, .app-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover, .buy-button:hover, .app-button:hover {
+      background-color: #45a049;
+    }
+
+    .product img, .team-member img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .price {
+      font-size: 24px;
+      color: #4CAF50;
+      margin: 20px 0;
+    }
+
+    .team-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contact Section -->
+  <section class="contact-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>Or email us directly at <a href="mailto:syedkashifmohiuddin397@gmail.com">syedkashifmohiuddin397@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-container">
+    <h1>About Us</h1>
+    <p>
+      Welcome to <span style="color:#4CAF50;font-weight:bold;">Our Company</span>! We are passionate about delivering high-quality products and exceptional service.
+    </p>
+    <p>
+      We believe in <span style="color:#4CAF50;font-weight:bold;">transparency, creativity, and integrity</span>. Every project is guided by our values.
+    </p>
+    <div class="team-section">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="kashif.jpg" alt="Kashif">
+          <h3>Kashif</h3>
+          <p>Top 10 Protein Powder Manufacturing Companies In India – The body uses proteins as fundamental nutrients...</p>
+        </div>
+        <div class="team-member">
+          <img src="a85ad302-7afa-469c-92d9-a184f94fe9f0.jpg" alt="Muddasseer">
+          <h3>Muddasseer</h3>
+          <p>The market for protein powders has been divided into categories according to type...</p>
+        </div>
+        <div class="team-member">
+          <img src="ceef88c9-2cc2-445f-b8ae-4f9505f95147.jpg" alt="Sameer">
+          <h3>Sameer</h3>
+          <p>GDP growth in Asia-Pacific nations like India rose from 7.2% in 2014 to 7.6% in 2016...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+  
+        <!-- Image -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="c:\Users\Abbr\Desktop\ChatGPT Image Apr 10, 2025, 09_21_34 PM.png" alt="Protein PowerX" class="img-fluid about-image">
+        </div>
+  
+        <!-- Text -->
+        <div class="col-md-6 text-white">
+          <h2 class="section-title">About <span class="highlight">Protein PowerX</span></h2>
+          <p class="about-text">
+            At Protein PowerX, we fuel the fire within. Built for athletes, lifters, and fitness enthusiasts, our supplements are designed to boost strength, build lean muscle, and support recovery.
+          </p>
+          <p class="about-text">
+            Made with ultra-pure whey, no fillers, and real performance ingredients, Protein PowerX gives you the edge — whether you're hitting the gym, the track, or just the grind of daily life.
+          </p>
+          <a href="#products" class="btn btn-about">Explore Our Products</a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <section class="order-section py-5" id="order">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Place Your <span class="highlight">Order Now</span></h2>
+        <p class="lead">Get your hands on the ultimate protein boost — delivered to your doorstep.</p>
+      </div>
+  
+      <form class="order-form row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email Address" required>
+        </div>
+        <div class="col-md-6">
+          <input type="tel" class="form-control" placeholder="Phone Number" required>
+        </div>
+        <div class="col-md-6">
+          <select class="form-select" required>
+            <option selected disabled>Choose Product</option>
+            <option>Protein PowerX - Chocolate</option>
+            <option>Protein PowerX - Vanilla</option>
+            <option>Protein PowerX - Fruit Fury</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Delivery Address" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-order">Submit Order</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
+</body>
+</html>
